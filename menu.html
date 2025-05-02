@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Burger Hut</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍔 Burger Hut</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.css">About</a></li>
+        <li><a href="info.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">Our Menu</h1>
+    <div class="menu-container">
+      <!-- Burger Cards -->
+      <div class="burger-card" data-name="Classic Burger" data-price="5">
+        <img src="c:\Users\VS KAVYA\OneDrive\Desktop\html\file\menu.jpg" alt="Classic Burger">
+        <h3>Classic Burger</h3>
+        <p>$5.00</p>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="burger-card" data-name="Cheese Blast" data-price="6.5">
+        <img src="c:\Users\VS KAVYA\OneDrive\Desktop\html\file\menu1.avif" alt="Cheese Blast">
+        <h3>Cheese Blast</h3>
+        <p>$6.50</p>
+        <button class="add-btn">Add to Order</button>
+      </div>
+
+      <div class="burger-card" data-name="Veggie Delight" data-price="4.5">
+        <img src="c:\Users\VS KAVYA\OneDrive\Desktop\html\file\menu3.jpg" alt="Veggie Delight">
+        <h3>Veggie Delight</h3>
+        <p>$4.50</p>
+        <button class="add-btn">Add to Order</button>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+      <h2>🧾 Order Summary</h2>
+      <ul id="order-list"></ul>
+      <p>Total: $<span id="total">0.00</span></p>
+      <p>Discount (10%): -$<span id="discount">0.00</span></p>
+      <p><strong>Final Bill: $<span id="final">0.00</span></strong></p>
+      <p class="timestamp">Date/Time: <span id="datetime"></span></p>
+    </div>
+  </main>
+
+  <script src="menu.js"></script>
+</body>
+</html>
